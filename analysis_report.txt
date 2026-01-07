@@ -1,0 +1,114 @@
+
+NIGERIA CAPITAL IMPORTATION ANALYSIS REPORT
+===========================================
+Generated: 2026-01-07 14:42:50
+Data Source: ObservationData_rxcylwg.csv
+Analysis Period: 2013-Q3 to 2025-Q1
+
+EXECUTIVE SUMMARY
+-----------------
+• Total quarters analyzed: 47
+• Average quarterly importation: $42,580M
+• Total capital importation: $2,001,278M
+• Volatility (Coefficient of Variation): 114.2%
+
+DATA QUALITY ASSESSMENT
+-----------------------
+• Data cleaning required: Yes (aggregated 8779 records to 47 quarters)
+• Missing quarters: 0
+• Date range completeness: Complete
+• Data units: USD Millions
+
+MODELING RESULTS
+----------------
+• Best model: ARIMA(1, 1, 1)
+• Model performance:
+  - Mean Absolute Error (MAE): $33,606.97M
+  - Root Mean Squared Error (RMSE): $46,472.55M
+  - Mean Absolute Percentage Error (MAPE): 185.8%
+  - Akaike Information Criterion (AIC): 889.2
+  - Bayesian Information Criterion (BIC): 894.0
+
+• Model improvement over benchmarks:
+  - Better than naive (last value): -26.3%
+  - Better than historical average: 3.4%
+
+FORECAST OUTLOOK (8 quarters)
+-----------------------------------------------
+• Forecast period: 2025-Q2 to 2027-Q1
+• Average forecast: $41,835M per quarter
+• Total forecast value: $334,683M
+• Forecast range: $41,643M to $43,027M
+
+KEY FINDINGS
+------------
+1. Seasonality: Strong seasonal patterns detected
+2. Trend: Increasing trend detected (125.27 per quarter)
+3. Stationarity: Non-stationary time series
+4. Model fit: Poor (MAPE: 185.8%)
+5. Data skewness: 2.44 (Right-skewed)
+6. Data kurtosis: 7.04 (Heavy-tailed)
+
+FORECAST ACCURACY ASSESSMENT
+---------------------------
+• Confidence interval width: Average 473.6% of forecast values
+• Forecast uncertainty: High
+• Model convergence: Successfully converged
+
+RECOMMENDATIONS
+---------------
+1. Data Collection & Management:
+   - Continue quarterly monitoring of capital importation
+   - Consider collecting monthly data for higher-frequency analysis
+   - Maintain data quality checks for outliers and inconsistencies
+
+2. Modeling Improvements:
+   - Consider SARIMA model for better seasonal capture
+   - Consider log transformation for skewed data
+   - Update model quarterly with new data for improved accuracy
+
+3. Forecasting Best Practices:
+   - Use confidence intervals for risk assessment
+   - Monitor forecast errors and adjust models as needed
+   - Consider multiple forecasting methods for comparison
+   - Incorporate external economic indicators when available
+
+4. Strategic Applications:
+   - Use forecasts for budgeting and resource allocation
+   - Monitor for structural breaks in capital flows
+   - Align policy decisions with capital flow projections
+
+LIMITATIONS & CAVEATS
+---------------------
+1. Data Limitations:
+   - Limited historical data (47 quarters)
+   - Potential reporting lags in official statistics
+   - Aggregation may mask sectoral trends
+
+2. Model Limitations:
+   - ARIMA assumes linear relationships
+   - Does not account for external shocks or policy changes
+   - Confidence intervals may understate true uncertainty
+
+3. Forecast Limitations:
+   - Accuracy decreases further into the future
+   - Assumes continuation of historical patterns
+   - Does not incorporate forward-looking information
+
+FILES GENERATED
+---------------
+1. cleaned_capital_importation.csv - Cleaned and aggregated quarterly time series
+2. annual_summary.csv - Annual totals derived from quarterly data
+3. forecast_results.csv - Point forecasts with confidence intervals
+4. model_comparison.csv - Performance metrics for tested ARIMA models
+5. analysis_report.txt - This comprehensive analysis report
+6. forecast_plot.png - Visual representation of historical data and forecasts
+
+DISCLAIMER
+----------
+This analysis is for informational and research purposes only. The forecasts are based
+on historical patterns and statistical models, and do not account for unforeseen events,
+policy changes, or external economic shocks. Users should exercise judgment and consider
+multiple information sources when making decisions based on these forecasts.
+
+For questions or further analysis, please contact the analytics team.
